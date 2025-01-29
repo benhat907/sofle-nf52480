@@ -12,9 +12,7 @@
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/rgb.h>
 
-&led_strip {
-  chain-length = <36>;
-};
+&led_strip { chain-length = <36>; };
 
 #define BASE 0
 #define LOWER 1
@@ -47,11 +45,11 @@
             //               | GUI | ALT  | CTRL | MO1 |  ENTER |  | SPACE | MO2| CTRL  | ALT   | GUI  |
 
             bindings = <
-&kp ESC          &kp N1           &kp N2    &kp N3    &kp N4     &kp N5                                 &kp N6     &kp N7     &kp N8     &kp N9    &kp N0    &kp DEL
-&kp TAB          &kp Q            &kp W     &kp E     &kp R      &kp T                                  &kp Y      &kp U      &kp I      &kp O     &kp P     &kp BSPC
-&rgb_ug RGB_EFF  &kp A            &kp S     &kp D     &kp F      &kp G                                  &kp H      &kp J      &kp K      &kp L     &kp SEMI  &kp SQT
-&rgb_ug RGB_TOG  &rgb_ug RGB_BRI  &kp X     &kp C     &kp V      &kp B      &kp K_MUTE    &kt KP_ENTER  &kp N      &kp M      &kp COMMA  &kp DOT   &kp FSLH  &kp KP_ENTER
-                                  &kp LGUI  &kp LALT  &kp LCTRL  &mo LOWER  &kp RET       &kp SPACE     &mo RAISE  &kp RCTRL  &kp RALT   &kp RGUI
+&kp ESC          &kp N1  &kp N2    &kp N3    &kp N4     &kp N5                                 &kp N6     &kp N7     &kp N8     &kp N9    &kp N0    &kp DEL
+&kp TAB          &kp Q   &kp W     &kp E     &kp R      &kp T                                  &kp Y      &kp U      &kp I      &kp O     &kp P     &kp BSPC
+&rgb_ug RGB_EFF  &kp A   &kp S     &kp D     &kp F      &kp G                                  &kp H      &kp J      &kp K      &kp L     &kp SEMI  &kp SQT
+&rgb_ug RGB_TOG  &kp Z   &kp X     &kp C     &kp V      &kp B      &kp K_MUTE    &kt KP_ENTER  &kp N      &kp M      &kp COMMA  &kp DOT   &kp FSLH  &kp KP_ENTER
+                         &kp LGUI  &kp LALT  &kp LCTRL  &mo LOWER  &kp RET       &kp SPACE     &mo RAISE  &kp RCTRL  &kp RALT   &kp RGUI
             >;
 
             sensor-bindings =
